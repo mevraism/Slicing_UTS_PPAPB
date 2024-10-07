@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Slicing_UTS</string>
+    <string name="postingan">postingan</string>
+    <string name="total_postingan">6956</string>
+    <string name="follower">pengikut</string>
+    <string name="total_follower">27,7Jt</string>
+    <string name="following">mengikuti</string>
+    <string name="total_following">219</string>
+    <string name="name">Ikhwan Hanipp</string>
+    <string name="content">Programmer</string>
+    <string name="name_profile">_iknip</string>
+    <string name="edit_profile">Edit profil</string>
+    <string name="share_profile">Bagikan profil</string>
+    <string name="bio">“You might not think that programmers are  artists, but programming is an extremely creative profession. It’s  logic-based creativity.” – John Romero  💻</string>
+</resources>

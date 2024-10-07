@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Header Layout -->
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/instagram_logo" />
+
+        <ImageView
+            android:id="@+id/btnBell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_heart"
+            android:layout_marginEnd="50dp" />
+
+        <ImageView
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_share"/>
+    </RelativeLayout>
+
+    <!-- Profile Summary Section -->
+    <LinearLayout
+        android:id="@+id/profile_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/header_layout"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/user_story"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_story"/>
+        <ImageView
+            android:id="@+id/user_story"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_story"/>
+        <ImageView
+            android:id="@+id/user_story"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_story"/>
+        <ImageView
+            android:id="@+id/user_story"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_story"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bio_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_stats"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="@string/content"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content"
+            android:text="@string/bio"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+    <!-- Edit and Share Profile Layout -->
+    <LinearLayout
+        android:id="@+id/edit_share_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bio_profile"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/edit_profile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/share_profile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/share_profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Tabs Section (Feed, Reels, Tag) -->
+    <LinearLayout
+        android:id="@+id/relative_empat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edit_share_profile"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/feed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_feed"/>
+
+        <ImageView
+            android:id="@+id/reel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reels"/>
+
+        <ImageView
+            android:id="@+id/tag"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tag"/>
+    </LinearLayout>
+
+    <!-- Bottom Navigation Section -->
+    <LinearLayout
+        android:id="@+id/linear_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_active"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"/>
+
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_upload"/>
+
+        <ImageView
+            android:id="@+id/reels"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reels"/>
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile"/>
+    </LinearLayout>
+</RelativeLayout>
