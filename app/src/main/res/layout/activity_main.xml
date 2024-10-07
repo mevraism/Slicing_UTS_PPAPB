@@ -54,17 +54,17 @@
             android:layout_height="80dp"
             android:src="@drawable/user_story"/>
         <ImageView
-            android:id="@+id/user_story"
+            android:id="@+id/user_story2"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/user_story"/>
         <ImageView
-            android:id="@+id/user_story"
+            android:id="@+id/user_story3"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/user_story"/>
         <ImageView
-            android:id="@+id/user_story"
+            android:id="@+id/user_story4"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/user_story"/>

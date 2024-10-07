@@ -156,15 +156,15 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/name"
             android:text="@string/content"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textColor="@color/gray"/>
         <TextView
             android:id="@+id/bio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/content"
             android:text="@string/bio"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textSize="18sp"/>
     </RelativeLayout>
 
 
@@ -185,7 +185,7 @@
             android:layout_gravity="center"
             android:text="@string/edit_profile"
             android:textSize="20sp"
-            android:textStyle="bold"
+            android:background="@color/whitegray"
             android:gravity="center"/>
 
         <TextView
@@ -195,7 +195,7 @@
             android:layout_height="wrap_content"
             android:text="@string/share_profile"
             android:textSize="20sp"
-            android:textStyle="bold"
+            android:background="@color/whitegray"
             android:gravity="center"/>
     </LinearLayout>
 
