@@ -45,13 +45,14 @@
             android:id="@+id/btnMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_titik_tiga"/>
+            android:src="@drawable/ic_titik_tiga" />
     </RelativeLayout>
 
-    <!-- Profile Summary Section -->
+    <!-- Profile Info -->
     <LinearLayout
         android:id="@+id/profile_stats"
         android:layout_width="match_parent"
@@ -137,6 +138,7 @@
     </LinearLayout>
 
 
+<!-- User Bio -->
     <RelativeLayout
         android:id="@+id/bio_profile"
         android:layout_width="match_parent"
@@ -168,7 +170,7 @@
     </RelativeLayout>
 
 
-    <!-- Edit and Share Profile Layout -->
+    <!-- Edit and Share Profile -->
     <LinearLayout
         android:id="@+id/edit_share_profile"
         android:layout_width="match_parent"
@@ -199,7 +201,7 @@
             android:gravity="center"/>
     </LinearLayout>
 
-    <!-- Tabs Section (Feed, Reels, Tag) -->
+    <!-- Tabs -->
     <LinearLayout
         android:id="@+id/relative_empat"
         android:layout_width="match_parent"
@@ -230,7 +232,7 @@
             android:src="@drawable/ic_tag"/>
     </LinearLayout>
 
-    <!-- Bottom Navigation Section -->
+    <!-- Bottom Navigation -->
     <LinearLayout
         android:id="@+id/linear_bawah"
         android:layout_width="match_parent"
